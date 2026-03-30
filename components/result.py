@@ -2,6 +2,7 @@ from tkinter import*
 from PIL import Image,ImageTk
 from tkinter import ttk,messagebox
 import mysql.connector
+from db_config import DB_HOST, DB_USER, DB_PASS, DB_NAME
 
 class ResultClass:
     def __init__(self,root):
@@ -62,7 +63,7 @@ class ResultClass:
     #=====functions========
     def fetch_roll(self):
         try:
-            con = mysql.connector.connect(host="localhost", user="DB_USER", password="DB_PASS", database="DB_NAME")
+            con = mysql.connector.connect(host=DB_HOST, user=DB_USER, password=DB_PASS, database=DB_NAME)
             cur = con.cursor()
             cur.execute("select roll from student")
             rows = cur.fetchall()
@@ -75,7 +76,7 @@ class ResultClass:
 
     def search(self):
         try:
-            con = mysql.connector.connect(host="localhost", user="DB_USER", password="DB_PASS", database="DB_NAME")
+            con = mysql.connector.connect(host=DB_HOST, user=DB_USER, password=DB_PASS, database=DB_NAME)
             cur = con.cursor()
             cur.execute("select name,course from student where roll=%s", (self.var_roll.get(),))
             row = cur.fetchone()
@@ -112,7 +113,7 @@ class ResultClass:
             if marks < 0 or marks > full_marks:
                 messagebox.showerror("Error", "Marks must be between 0 and Full Marks", parent=self.root)
                 return
-            con = mysql.connector.connect(host="localhost", user="DB_USER", password="DB_PASS", database="DB_NAME")
+            con = mysql.connector.connect(host=DB_HOST, user=DB_USER, password=DB_PASS, database=DB_NAME)
             cur = con.cursor()
             # Check if result already exists for this roll
             cur.execute("select * from result where roll=%s", (self.var_roll.get(),))
