@@ -81,3 +81,12 @@ STUDENT RESULT MANAGEMENT SYSTEM/
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page and open a pull request.
+
+
+👨‍💻 Author
+
+HIMANSHU KUMAR ROUT
+
+GitHub: [Himanshu Kumar Rout](https://github.com/HimanshuKumarRout/SOLAR-SYSTEM-EXPLORER)
+
+Gmail- himanshurout136@gmail.com
