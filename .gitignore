@@ -1,0 +1,10 @@
+# Ignore Python caches
+__pycache__/
+*.py[cod]
+
+# Ignore database credentials configuration
+db_config.py
+
+# Optionally ignore virtual environment
+venv/
+.env
