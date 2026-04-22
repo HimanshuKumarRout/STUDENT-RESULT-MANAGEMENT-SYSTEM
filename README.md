@@ -171,4 +171,3 @@ If you found this project useful, please **star ⭐ the repository** and share i
 ---
 
 <p align="center">Built with 🎓 using Python & MySQL</p>
-```
