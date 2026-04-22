@@ -89,7 +89,7 @@ DB_NAME = "student_result_management_system"
 ### 1️⃣ Clone Repository
 
 ```bash id="t6p3zo"
-git clone https://github.com/your-username/student-result-management-system.git
+git clone https://github.com/HimanshuKumarRout/student-result-management-system.git
 cd student-result-management-system
 ```
 
